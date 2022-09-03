@@ -10,9 +10,7 @@ import com.epicode.gestioneprenotazioni.prenotazioni.Prenotazione;
 
 @Configuration
 public class UtenteConfig {
-	@Autowired @Qualifier ("pren1") Prenotazione pren1;
-	@Autowired @Qualifier ("pren2") Prenotazione pren2;
-	@Autowired @Qualifier ("pren3") Prenotazione pren3;
+
 
 	@Bean("utente1")
 	public Utente utente1() {
@@ -20,9 +18,7 @@ public class UtenteConfig {
 		utente.setUsername("GinoStruzzo");
 		utente.setNomeCompleto("Gioacchino Struzzo");
 		utente.setEmail("gino.struzzo@gmail.com");
-		utente.aggiungiPrenotazione(pren1);
-		utente.aggiungiPrenotazione(pren2);
-		utente.aggiungiPrenotazione(pren3);
+		
 		return utente;
 	}
 

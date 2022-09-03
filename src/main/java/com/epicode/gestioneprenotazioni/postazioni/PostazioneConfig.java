@@ -8,14 +8,10 @@ import com.epicode.gestioneprenotazioni.prenotazioni.Prenotazione;
 
 @Configuration
 public class PostazioneConfig {
-	@Autowired @Qualifier ("pren1") Prenotazione pren1;
-	@Autowired @Qualifier ("pren2") Prenotazione pren2;
-	@Autowired @Qualifier ("pren3") Prenotazione pren3;
+	
 	// ================================ POSTAZIONI PRIVATE
 	// ================================
-//	@Autowired
-//	ObjectProvider<Postazione> postProvider;
-
+	
 	@Bean("deskPriv1")
 	public Postazione deskPriv1() {
 		Postazione postazione = new Postazione();
@@ -23,9 +19,7 @@ public class PostazioneConfig {
 		postazione.setDescrizione("Scrivania attrezzata, chiusa da pannelli, per lavori in solitaria");
 		postazione.setTipo(TipoPostazione.PRIVATO);
 		postazione.setNumOccupanti(1);
-		postazione.aggiungiPrenotazione(pren1);
-		postazione.aggiungiPrenotazione(pren2);
-		postazione.aggiungiPrenotazione(pren3);
+
 		return postazione;
 	}
 

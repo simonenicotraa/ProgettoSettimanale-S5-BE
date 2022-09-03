@@ -12,3 +12,5 @@
 						
 	ricerca postazioni per tipo
 	ricerca per citta di interesse
+	
+	@author Simone Nicotra

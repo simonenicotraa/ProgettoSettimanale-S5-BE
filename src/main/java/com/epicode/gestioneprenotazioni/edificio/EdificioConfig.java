@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.epicode.gestioneprenotazioni.postazioni.Postazione;
+import com.epicode.gestioneprenotazioni.utenti.Utente;
 
 @Configuration
 public class EdificioConfig {
@@ -29,7 +30,7 @@ public class EdificioConfig {
 	@Autowired
 	@Qualifier("deskPriv6")
 	Postazione deskPriv6;
-
+	//Author SimoneNicotra
 	@Autowired
 	@Qualifier("deskOpen1")
 	Postazione deskOpen1;
@@ -59,6 +60,8 @@ public class EdificioConfig {
 	@Qualifier("deskRiunioni4")
 	Postazione deskRiunioni4;
 
+	
+	
 //	@Autowired
 //	ObjectProvider<Edificio> edificioProvider;
 
